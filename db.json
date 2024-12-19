@@ -1,0 +1,22 @@
+{
+  "cart": [
+    {
+      "id": "2",
+      "productName": "Saas-Service Premium",
+      "cost": "$35",
+      "paymentInterval": "per month"
+    },
+    {
+      "id": "2",
+      "productName": "Saas-Service Premium",
+      "cost": "$35",
+      "paymentInterval": "per month"
+    },
+    {
+      "id": "2",
+      "productName": "Saas-Service Premium",
+      "cost": "$35",
+      "paymentInterval": "per month"
+    }
+  ]
+}
