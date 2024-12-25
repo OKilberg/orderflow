@@ -2,17 +2,24 @@ import { styled } from "../../../styled-system/jsx";
 
 const StyledButton = styled("button", {
   base: {
-    backgroundColor: "#fff",
-    border: "1px solid #000",
-    color: "#000",
-    padding: "0.5rem 1rem",
-    width: "100px",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: "4px",
+    padding: "0 15px",
+    fontSize: "15px",
+    lineHeight: "1",
+    fontWeight: "500",
+    height: "35px",
   },
   variants: {
     variant: {
       primary: {
         backgroundColor: "blue.500",
         color: "white",
+        "&:hover": {
+          backgroundColor: "blue.600",
+        },
       },
       secondary: {
         backgroundColor: "gray",

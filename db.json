@@ -3,19 +3,22 @@
     {
       "id": "2",
       "productName": "Saas-Service Premium",
-      "cost": "$35",
+      "cost": 35,
       "paymentInterval": "per month"
     },
     {
       "id": "2",
       "productName": "Saas-Service Premium",
-      "cost": "$35",
+      "cost": 35,
       "paymentInterval": "per month"
-    },
+    }
+  ],
+  "addons": [
     {
-      "id": "2",
-      "productName": "Saas-Service Premium",
-      "cost": "$35",
+      "id":"a1",
+      "parentProduct":"Saas-Service Premium",
+      "addonName":"Performance Boost x2",
+      "cost": 10,
       "paymentInterval": "per month"
     }
   ]

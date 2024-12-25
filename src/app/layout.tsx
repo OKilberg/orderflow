@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { css } from "../../styled-system/css";
 import Navbar from "@/components/Navbar/Navbar";
-import { Step, OrderSteps } from "@/components/OrderSteps/OrderSteps";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +26,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.log("Root layout was rerendered.");
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>

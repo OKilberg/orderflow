@@ -1,10 +1,9 @@
 "use server";
-
-import { revalidatePath } from "next/cache";
+import { revalidateTag } from "next/cache";
 
 const cartBaseUrl = "http://localhost:3000/cart";
 
-export const AddService = async () => {
+export const addCartService = async () => {
   const data = {
     id: "2",
     productName: "Saas-Service Premium",
@@ -20,12 +19,16 @@ export const AddService = async () => {
 
   const result = await response.json();
 
-  revalidatePath("http://localhost:3000/cart");
+  /*
+  NOTE: I have discovered that revalidating tags for server components currently in view will cause full rerenders (down to root layout).
+  This was not the expected behavior, so it seems that client component is the only way to achieve the intended behavior without rerendering all other components on the page.
+  */
+  revalidateTag("cart"); //
 
-  console.log(result);
+  console.log("AddCartService", result);
 };
 
-export const RemoveService = async (formData: FormData) => {
+export const removeCartService = async (formData: FormData) => {
   const id = formData.get("id");
 
   const url = `${cartBaseUrl}/${id}`;
@@ -36,7 +39,7 @@ export const RemoveService = async (formData: FormData) => {
 
   const result = await response.json();
 
-  revalidatePath("http://localhost:3000/cart");
+  revalidateTag("cart");
 
   console.log(result);
 };
