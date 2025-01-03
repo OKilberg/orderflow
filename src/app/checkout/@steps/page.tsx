@@ -16,6 +16,7 @@ const Steps = ({ searchParams }) => {
     >
       <OrderSteps>
         <Step label="Summary" active={!step || step === "summary"} />
+        <Step label="Summary"  />
         <Step label="Details" active={step === "details"} />
         <Step label="Confirm" active={step === "confirm"} />
         <Step label="Success" active={step === "success"} />
