@@ -1,17 +1,11 @@
-import React from 'react'
-import StyledCard from './StyledCard'
-import { WithChildren } from '@/shared/types/types'
+import React from "react";
+import StyledCard from "./StyledCard";
+import { WithChildren } from "@/shared/types/types";
 
-type CardProps = {
+type CardProps = { variant?: "product" } & WithChildren;
 
-} & WithChildren
+const Card = ({ children, variant }: CardProps) => {
+  return <StyledCard data-state variant={variant}>{children}</StyledCard>;
+};
 
-const Card = ({children}:CardProps) => {
-  return (
-    <StyledCard>
-      {children}
-    </StyledCard>
-  )
-}
-
-export default Card
+export default Card;

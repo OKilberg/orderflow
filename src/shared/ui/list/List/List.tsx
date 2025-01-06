@@ -1,17 +1,11 @@
-import React from 'react'
-import StyledList from './StyledList'
-import { WithChildren } from '@/shared/types/types'
+import React from "react";
+import StyledList from "./StyledList";
+import { WithChildren } from "@/shared/types/types";
 
-type ListProps = {
+type ListProps = { variant?: "row" } & WithChildren;
 
-} & WithChildren
+const List = ({ children, variant }: ListProps) => {
+  return <StyledList variant={variant}>{children}</StyledList>;
+};
 
-const List = ({children}:ListProps) => {
-  return (
-    <StyledList>
-      {children}
-    </StyledList>
-  )
-}
-
-export default List
+export default List;

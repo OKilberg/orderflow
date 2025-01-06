@@ -1,17 +1,13 @@
-import React from 'react'
-import StyledHeading from './StyledHeading'
-import { WithChildren } from '@/shared/types/types'
+import React from "react";
+import StyledHeading from "./StyledHeading";
+import { WithChildren } from "@/shared/types/types";
 
 type HeadingProps = {
+  size?: "md";
+} & WithChildren;
 
-} & WithChildren
+const Heading = ({ children, size }: HeadingProps) => {
+  return <StyledHeading size={size}>{children}</StyledHeading>;
+};
 
-const Heading = ({children}:HeadingProps) => {
-  return (
-    <StyledHeading>
-      {children}
-    </StyledHeading>
-  )
-}
-
-export default Heading
+export default Heading;

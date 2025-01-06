@@ -21,5 +21,230 @@
       "cost": 10,
       "paymentInterval": "per month"
     }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "productId": "1",
+      "slug": "saas-service-premium",
+      "imageSrc": "/product.jpg",
+      "title": "Saas-Service Premium",
+      "description": "A premium SaaS service.",
+      "price": "35",
+      "paymentInterval": "per month",
+      "productGroup": "saas",
+      "upgradeSlug": "saas-service-enterprise"
+    },
+    {
+      "id": "2",
+      "productId": "2",
+      "slug": "saas-service-premium",
+      "imageSrc": "/product.jpg",
+      "title": "Saas-Service Premium",
+      "description": "A premium SaaS service.",
+      "price": "35",
+      "paymentInterval": "per month",
+      "productGroup": "saas",
+      "upgradeSlug": "saas-service-enterprise"
+    },
+    {
+      "id": "3",
+      "productId": "3",
+      "slug": "saas-service-basic",
+      "imageSrc": "/product.jpg",
+      "title": "Saas-Service Basic",
+      "description": "A basic SaaS service.",
+      "price": "20",
+      "paymentInterval": "per month",
+      "productGroup": "saas",
+      "upgradeSlug": "saas-service-premium"
+    },
+    {
+      "id": "4",
+      "productId": "4",
+      "slug": "saas-service-enterprise",
+      "imageSrc": "/product.jpg",
+      "title": "Saas-Service Enterprise",
+      "description": "An enterprise-level SaaS service.",
+      "price": "50",
+      "paymentInterval": "per month",
+      "productGroup": "saas",
+      "upgradeSlug": "saas-service-premium"
+    },
+    {
+      "id": "5",
+      "productId": "5",
+      "slug": "cloud-storage-pro",
+      "imageSrc": "/product.jpg",
+      "title": "Cloud Storage Pro",
+      "description": "Premium cloud storage with enhanced security.",
+      "price": "15",
+      "paymentInterval": "per month",
+      "productGroup": "cloud",
+      "upgradeSlug": "cloud-storage-enterprise"
+    },
+    {
+      "id": "6",
+      "productId": "6",
+      "slug": "cloud-storage-enterprise",
+      "imageSrc": "/product.jpg",
+      "title": "Cloud Storage Enterprise",
+      "description": "Enterprise-level cloud storage for teams.",
+      "price": "40",
+      "paymentInterval": "per month",
+      "productGroup": "cloud",
+      "upgradeSlug": "cloud-storage-pro"
+    },
+    {
+      "id": "7",
+      "productId": "7",
+      "slug": "team-collaboration-suite",
+      "imageSrc": "/product.jpg",
+      "title": "Team Collaboration Suite",
+      "description": "Tools to boost your team's productivity.",
+      "price": "25",
+      "paymentInterval": "per month",
+      "productGroup": "tool",
+      "upgradeSlug": "team-collaboration-suite-premium"
+    },
+    {
+      "id": "8",
+      "productId": "8",
+      "slug": "marketing-automation-basic",
+      "imageSrc": "/product.jpg",
+      "title": "Marketing Automation Basic",
+      "description": "Automate your marketing efforts easily.",
+      "price": "30",
+      "paymentInterval": "per month",
+      "productGroup": "tool",
+      "upgradeSlug": "marketing-automation-pro"
+    },
+    {
+      "id": "9",
+      "productId": "9",
+      "slug": "marketing-automation-pro",
+      "imageSrc": "/product.jpg",
+      "title": "Marketing Automation Pro",
+      "description": "Advanced tools for marketing automation.",
+      "price": "60",
+      "paymentInterval": "per month",
+      "productGroup": "tool",
+      "upgradeSlug": "marketing-automation-basic"
+    },
+    {
+      "id": "10",
+      "productId": "10",
+      "slug": "customer-support-premium",
+      "imageSrc": "/product.jpg",
+      "title": "Customer Support Premium",
+      "description": "24/7 customer support for your business.",
+      "price": "45",
+      "paymentInterval": "per month",
+      "productGroup": "support",
+      "upgradeSlug": "customer-support-enterprise"
+    },
+    {
+      "id": "11",
+      "productId": "11",
+      "slug": "customer-support-basic",
+      "imageSrc": "/product.jpg",
+      "title": "Customer Support Basic",
+      "description": "Affordable customer support solutions.",
+      "price": "20",
+      "paymentInterval": "per month",
+      "productGroup": "support",
+      "upgradeSlug": "customer-support-premium"
+    },
+    {
+      "id": "12",
+      "productId": "12",
+      "slug": "e-commerce-analytics",
+      "imageSrc": "/product.jpg",
+      "title": "E-Commerce Analytics",
+      "description": "Insights to grow your online store.",
+      "price": "35",
+      "paymentInterval": "per month",
+      "productGroup": "tools",
+      "upgradeSlug": "e-commerce-analytics-premium"
+    }
+  ],
+  "addonProducts": [
+    {
+      "id": "1",
+      "productId": "1",
+      "slug": "saas-custom-reporting-addon",
+      "imageSrc": "/addon.jpg",
+      "title": "Custom Reporting Addon",
+      "description": "Create tailored reports to meet your unique business needs.",
+      "price": "20",
+      "paymentInterval": "per month",
+      "productGroup": "saas"
+    },
+    {
+      "id": "2",
+      "productId": "2",
+      "slug": "saas-advanced-analytics-addon",
+      "imageSrc": "/addon.jpg",
+      "title": "Advanced Analytics Addon",
+      "description": "Gain deeper insights with advanced analytics for your SaaS service.",
+      "price": "10",
+      "paymentInterval": "per month",
+      "productGroup": "saas"
+    },
+    {
+      "id": "3",
+      "productId": "3",
+      "slug": "cloud-extra-storage-addon",
+      "imageSrc": "/addon.jpg",
+      "title": "Extra Storage Addon",
+      "description": "Add an additional 500 GB to your cloud storage.",
+      "price": "5",
+      "paymentInterval": "per month",
+      "productGroup": "cloud"
+    },
+    {
+      "id": "4",
+      "productId": "4",
+      "slug": "cloud-data-backup-addon",
+      "imageSrc": "/addon.jpg",
+      "title": "Data Backup Addon",
+      "description": "Automate regular backups to ensure data safety.",
+      "price": "10",
+      "paymentInterval": "per month",
+      "productGroup": "cloud"
+    },
+    {
+      "id": "5",
+      "productId": "5",
+      "slug": "marketing-advanced-seo-addon",
+      "imageSrc": "/addon.jpg",
+      "title": "Advanced SEO Addon",
+      "description": "Boost your marketing efforts with advanced SEO tools.",
+      "price": "15",
+      "paymentInterval": "per month",
+      "productGroup": "tool"
+    },
+    {
+      "id": "6",
+      "productId": "6",
+      "slug": "customer-support-ai-addon",
+      "imageSrc": "/addon.jpg",
+      "title": "AI Support Bot Addon",
+      "description": "Enhance customer support with an AI-powered chatbot.",
+      "price": "25",
+      "paymentInterval": "per month",
+      "productGroup": "support"
+    },
+    {
+      "id": "7",
+      "productId": "7",
+      "slug": "ecommerce-ab-testing-addon",
+      "imageSrc": "/addon.jpg",
+      "title": "A/B Testing Addon",
+      "description": "Optimize your store with A/B testing for layouts and features.",
+      "price": "20",
+      "paymentInterval": "per month",
+      "productGroup": "e-commerce"
+    }
   ]
 }

@@ -11,8 +11,10 @@ export default defineConfig({
   include: [
     "./src/components/**/*.{ts,tsx,js,jsx}",
     // "./src/**/*.{js,jsx,ts,tsx}",
-    "./pages/**/*.{js,jsx,ts,tsx}",
+    // "./pages/**/*.{js,jsx,ts,tsx}",
     "./src/app/**/*.{ts,tsx,js,jsx}",
+    "./src/features/**/*.{ts,tsx,js,jsx}",
+    "./src/shared/**/*.{ts,tsx,js,jsx}",
   ],
 
   // Files to exclude
