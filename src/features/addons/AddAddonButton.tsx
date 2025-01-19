@@ -6,6 +6,7 @@ import {
   getLocally,
   storeLocally,
 } from "@/shared/utility/localStorage";
+import { useQueryState } from "nuqs";
 import React, { useState, useEffect } from "react";
 
 type AddAddonButtonProps = {
@@ -14,46 +15,36 @@ type AddAddonButtonProps = {
 };
 
 const AddAddonButton = ({ addonId, productGroup }: AddAddonButtonProps) => {
-  const [added, setAdded] = useState(false);
+  const addonString = `addon${addonId}`;
+  const [addon, setAddon] = useQueryState(addonString);
   const [hover, setHover] = useState(false);
 
-  useEffect(() => {
-    const isAdded = getLocally(addonId);
-
-    if (isAdded) {
-      setAdded(true);
-    } else {
-      setAdded(false);
-    }
-  }, []);
-
   const onClick = () => {
-    if (added) {
-      clearLocally(addonId);
-      setAdded(false);
+    if (addon) {
+      setAddon(null);
       return;
     }
 
-    storeLocally(addonId, { productGroup });
-    setAdded(true);
+    setAddon("true");
   };
 
   const getLabel = () => {
-    if (added && hover) {
+    if (addon && hover) {
       return "❌Remove";
     }
 
-    if (added && !hover) {
+    if (addon && !hover) {
       return "✔️Added";
     }
 
-    if (!added) {
+    if (!addon) {
       return "➕Add";
     }
   };
 
   return (
     <CardOrderButton
+      variant={addon ? "added" : undefined}
       onClick={onClick}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}

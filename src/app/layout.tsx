@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { css } from "../../styled-system/css";
 import Navbar from "@/components/Navbar/Navbar";
+import { NuqsAdapter } from "nuqs/adapters/next/app";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,7 +39,7 @@ export default function RootLayout({
           })}
         >
           <Navbar />
-          {children}
+          <NuqsAdapter>{children}</NuqsAdapter>
         </div>
       </body>
     </html>

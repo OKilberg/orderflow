@@ -3,7 +3,7 @@ import { WithChildren } from "@/shared/types/types";
 import React from "react";
 import { styled } from "../../../../../../styled-system/jsx";
 
-type CardOrderButtonProps = {} & WithChildren &
+type CardOrderButtonProps = { variant?: "added" } & WithChildren &
   React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const StyledCardOrderButton = styled("button", {
@@ -17,6 +17,17 @@ const StyledCardOrderButton = styled("button", {
     justifyContent: "center",
     _hover: { backgroundColor: "#2B6CB0", cursor: "pointer" }, // Blue.700
   },
+  variants: {
+    variant: {
+      added: {
+        backgroundColor: "white",
+        color: "blue.400",
+        outline: "solid 1px",
+        outlineColor: "blue.400",
+        _hover: { backgroundColor: "blue.100", cursor: "pointer" },
+      },
+    },
+  },
 });
 
 const CardOrderButton = ({
@@ -24,9 +35,11 @@ const CardOrderButton = ({
   onClick,
   onMouseEnter,
   onMouseLeave,
+  variant,
 }: CardOrderButtonProps) => {
   return (
     <StyledCardOrderButton
+      variant={variant}
       onClick={onClick}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}

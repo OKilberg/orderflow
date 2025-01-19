@@ -18,7 +18,7 @@ const Order = async ({ params }: { params: { slug: string } }) => {
 
   return (
     <Main>
-      <OrderSummary products={[product]} />
+      <OrderSummary products={[product]} addons={addons} />
       <Addons addons={addons} />
     </Main>
   );
